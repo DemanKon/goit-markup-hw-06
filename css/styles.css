@@ -37,12 +37,16 @@ ul {
 
 img {
     display: block;
+    width: 100%;
+    height: auto;
 }
 
 .container {
     width: 100%;
-    max-width: 1158px;
-    padding: 0 15px;
+    /* max-width: 1158px;
+    padding: 0 15px; */
+    min-width: 288px;
+    padding: 0 16px;
     margin: 0 auto;
     /* outline: 2px solid red; */
 }
@@ -58,16 +62,16 @@ img {
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
-.header-menu {
-    display: flex;
-    flex-grow: 1;
-    align-items: center;
-}
-
 .header-container {
     display: flex;   
     align-items: center;
     justify-content: center; 
+}
+
+.header-menu {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
 }
 
 .header-logo {
@@ -166,6 +170,7 @@ a.menu-contact-link:hover {
 
 .main-banner {
     padding: 188px 0;
+    padding: 72px 0;
     background-color: #2E2F42;
     max-width: 1440px;
     background-image: linear-gradient(
@@ -187,13 +192,17 @@ a.menu-contact-link:hover {
 .main-banner-title {
     color: #FFF;
     text-align: center;
-    font-size: 56px;
+    /* font-size: 56px; */
     font-weight: 700;
-    line-height: 1.07;
+    /* line-height: 1.07; */
     letter-spacing: 0.02em;
-    max-width: 496px;
+    /* max-width: 496px; */
+    max-width: 216px;
     margin: 0 auto;
-    margin-bottom: 48px;
+    /* margin-bottom: 48px; */
+    margin-bottom: 72px;
+    font-size: 36px;
+    line-height: 1.11;
 }
 
 .main-banner-btn {
@@ -230,12 +239,15 @@ a.menu-contact-link:hover {
 /*? -------------------SECTION BUSSINESS-------------- */
 
 .bussiness {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
+    /* padding-top: 120px;
+    padding-bottom: 120px; */
+    padding-top: 96px;
+    padding-bottom: 96px;
+    }
 
 .bussiness-icon-item {
-    display: flex;
+    display: none;
+    /* display: flex;
     align-items: center;
     justify-content: center;
     width: 264px;
@@ -243,26 +255,28 @@ a.menu-contact-link:hover {
     border-radius: 4px;
     border: 1px solid #8E8F99;
     background: #F4F4FD;
-    margin-bottom: 8px;
+    margin-bottom: 8px; */
 }
-
-/* .icon-item-svg {
-    width: 64px;
-    height: 64px;
-} */
 
 .business-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    /* gap: 24px; */
+    gap: 72px;
 }
 
 .bussiness-subtitle {
     color: #2E2F42;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
+    text-align: center; /* only mobile */
+    font-size: 36px;
+    /* font-size: 20px; */
+    /* font-weight: 500; */
+    font-weight: 700;
+    /* line-height: 1.2; */
+    line-height: 1.11;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
+    text-transform: capitalize; /* only mobile */
 }
 
 .bussiness-text {
@@ -270,19 +284,22 @@ a.menu-contact-link:hover {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    width: 264px;
+    max-width: 288px;
+    /* width: 264px; */
+    font-weight: 500; /* only mobile */
 }
 
 /*! -------------------OUR TEAM-------------- */
 
 .team {
     background-color: #F4F4FD;
-    padding: 120px 0;
+    /* padding: 120px 0; */
+    padding: 96px 0;
 }
-/* .team-container {
-    background-color: #F4F4FD;
-    padding: 120px 0;
-}  */
+
+.team > .container {
+    padding: 0 28px;
+}
 
 .team-title {
     color: #2E2F42;
@@ -297,14 +314,18 @@ a.menu-contact-link:hover {
 
 .team-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    /* gap: 24px; */
+    gap: 72px;
+    
 }
 
 .team-list-item {
     border-radius: 0px 0px 4px 4px;
     background: #FFF;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    width: calc((100% - 72px) / 4);
+    /* width: calc((100% - 72px) / 4); */
+    width: 100%;
 }
 
 /* .team-item-img {
@@ -372,8 +393,14 @@ a.menu-contact-link:hover {
 /*-------------------OUR PORTFOLIO-------------- */
 
 .portfolio {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    /* padding-top: 120px;
+    padding-bottom: 120px; */
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.portfolio >.container {
+    padding: 0 16px;
 }
 
 .portfolio-title {
@@ -396,7 +423,8 @@ a.menu-contact-link:hover {
 
 .portfolio-list-item {
     background: #FFF;
-    width: calc((100% - 48px) / 3);
+    /* width: calc((100% - 48px) / 3); */
+    width: 100%;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
@@ -464,18 +492,23 @@ a.menu-contact-link:hover {
 
 .footer {
     background-color: #2E2F42;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    /* padding-top: 100px;
+    padding-bottom: 100px; */
+    padding-top: 96px;
+    padding-bottom: 96px;
     display: flex;
 }
 
 .footer-container {
     display: flex;
-    align-items: baseline;
+    /* align-items: baseline; */
+    flex-wrap: wrap;
+    gap: 72px; /*for mobile ver*/
 }
 
 .footer-text-section {
-    margin-right: 120px;
+    /* margin-right: 120px; */ /*for mobile ver*/
+    text-align: center; /*for mobile ver*/
 }
 
 .foter-logo {
@@ -488,6 +521,7 @@ a.menu-contact-link:hover {
     text-transform: uppercase;
     margin-bottom: 16px;
     display: inline-block;
+    
 }
 
 .footer-logo-color {
@@ -506,10 +540,13 @@ a.menu-contact-link:hover {
     line-height: 1.50; 
     letter-spacing: 0.02em;
     max-width: 264px;
+    text-align: left; /*for mobile ver*/
 }
 
 .footer-soc-block {
-    margin-right: 80px;
+    /* margin-right: 80px; */
+    margin: 0 auto;
+    text-align: center; /*for mobile ver*/
 }
 
 .soc-link-subtitle {
@@ -553,12 +590,12 @@ a.menu-contact-link:hover {
 }
 
 .footer-subscribe {
-    
+    text-align: center;
 }
 
 .footer-form {
-    display: flex;
-    gap: 24px;
+    /* display: flex;
+    gap: 24px; */
 }
 
 .form-subtitle {
@@ -570,9 +607,9 @@ a.menu-contact-link:hover {
     margin-bottom: 16px;
 }
 
-.footer-input {
-    /* padding-top: 16px; */
-    width: 264px;
+.footer-input {    
+    /* width: 264px; */
+    width: 288px;
     height: 40px;
     background-color: transparent;
     border-radius: 4px;
@@ -585,6 +622,7 @@ a.menu-contact-link:hover {
     letter-spacing: 0.04em;
     padding-left: 16px;
     /* position: relative; */
+    margin-bottom: 16px;
 }
 
 .footer-input::placeholder {
@@ -614,6 +652,7 @@ a.menu-contact-link:hover {
     border: none;
     /* margin-left: 24px; */
     cursor: pointer;
+    margin: 0 auto;
 }
 
 .subscribe-icon {
@@ -870,3 +909,7 @@ a.menu-contact-link:hover {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+
+/*! -------------------TABLET VERSION-------------- */
+
+/*? -------------------SECTION BUSSINESS-------------- */
