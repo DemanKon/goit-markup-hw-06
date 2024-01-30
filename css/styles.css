@@ -711,9 +711,9 @@ a.mob-contact-linkk:active {
 }
 
 .modal {
-    position: absolute;
-    padding: 24px;
-    width: 408px;
+    position: absolute;    
+    padding: 72px 16px 24px 16px;
+    width: 288px;
     min-height: 584px;
     top: 50%;
     left: 50%;
@@ -775,10 +775,6 @@ a.mob-contact-linkk:active {
 
 .modal-form {
 
-}
-
-.modal {
-    padding: 72px 24px 24px 24px;
 }
 
 .modal-field {
@@ -1124,6 +1120,12 @@ a.menu-contact-link:hover {
     width: 264px;
 }
 
+/*? -------------------TABLET MODAL-------------- */
+
+.modal {
+    padding: 72px 24px 24px 24px;
+    width: 408px;
+}
 
 }
 
